@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Dream Agency</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Alpine Js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body class="text-biru font-Hind-Vadodara overflow-x-hidden">
+    <!-- Header Start -->
+    <!-- Navbar Start -->
+    <header class="py-9 px-6 md:p-11 lg:px-12 lg:py-11" x-data="{headerOpen : true}">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div class="md:order-2">
+                    <h1 class="text-2xl font-bold font-Playfair-Display">Dream Agency</h1>
+                </div>
+                <div class="md:order-1 lg:hidden">
+                    <a href="#"><img @click="headerOpen = ! headerOpen" src="../public/asset/icon/menu.svg" alt="menu"></a>
+                </div>
+                <div class="hidden md:flex order-3">
+                    <div>
+                        <a href="#"><img src="../public/asset/icon/fb.svg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="../public/asset/icon/in.svg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="../public/asset/icon/ig.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:order-1">
+                    <ul class="hidden lg:flex gap-10">
+                        <li class="text-base font-semibold">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="text-base font-normal">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="text-base font-normal">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="text-base font-normal">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+        <div x-show="headerOpen" class="fixed bottom-0 right-0 left-0 p-4 border lg:hidden">
+            <ul class="flex justify-between">
+                <li>
+                    <a href="#" class="flex justify-center flex-col items-center gap-2">
+                        <ion-icon name="home-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-semibold">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex justify-center flex-col items-center gap-2 opacity-50">
+                        <ion-icon name="desktop-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-normal">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex justify-center flex-col items-center gap-2 opacity-50">
+                        <ion-icon name="build-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-normal">Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex justify-center flex-col items-center gap-2 opacity-50">
+                        <ion-icon name="call-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-normal">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Navbar End -->
+    <!-- Hero Start -->
+    <section class="px-6 py-8 md:p-11 lg:px-12 lg:py-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12 lg:col-span-7 lg:order-2">
+                    <div class="flex justify-center">
+                        <img src="../public/asset/logo/page1sm.png" alt="">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-5 lg:order-1">
+                    <div class="flex flex-col gap-5 items-center lg:items-start lg:h-full lg:justify-center">
+                        <div class="md:w-2/3 lg:w-full">
+                            <h1 class="text-5xl md:text-6xl lg:text-7xl font-light text-center lg:text-start"><span class="font-bold">We Help you</span> to grow your Business </h1>
+                        </div>
+                        <div class="w-2/3 lg:w-full">
+                            <p class="text-center lg:text-start opacity-75 text-base font-normal">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                        <div class="text-center lg:text-start">
+                            <button class="btn">GET STARTED</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+    <!-- Header End -->
+    <!-- Business Start -->
+    <section class="px-6 py-8 md:p-11 lg:px-12 lg:py-11 bg-biru-muda">
+        <div class="container">
+            <div class="flex flex-col gap-10">
+                <div class="row">
+                    <div class="col-span-12">
+                        <div class="flex justify-center">
+                            <div class="text-center w-2/3 lg:w-1/3">
+                                <h1 class="text-5xl font-light"><span class="font-bold">What We Do</span>  For Your Business</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-span-10 col-start-2 md:col-span-6 lg:col-span-3">
+                        <div class="card">
+                            <div class="flex flex-col gap-3">
+                                <div>
+                                    <img src="../public/asset/logo/web.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-base font-bold uppercase">Website Design</h1>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-light opacity-60">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-10 col-start-2 md:col-span-6 lg:col-span-3">
+                        <div class="card">
+                            <div class="flex flex-col gap-3">
+                                <div>
+                                    <img src="../public/asset/logo/web dev.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-base font-bold uppercase">Web Development</h1>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-light opacity-60">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-10 col-start-2 md:col-span-6 lg:col-span-3">
+                        <div class="card">
+                            <div class="flex flex-col gap-3">
+                                <div>
+                                    <img src="../public/asset/logo/mb app.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-base font-bold uppercase">Mobile APP Development</h1>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-light opacity-60">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-10 col-start-2 md:col-span-6 lg:col-span-3">
+                        <div class="card">
+                            <div class="flex flex-col gap-3">
+                                <div>
+                                    <img src="../public/asset/logo/marketing.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-base font-bold uppercase">Marketing</h1>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-light opacity-60">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Business End -->
+    <!-- About Start -->
+    <section class="px-6 py-14 md:p-11 lg:px-12 lg:py-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12 lg:col-span-7">
+                    <div>
+                        <img src="../public/asset/logo/about us.png" alt="">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-5">
+                    <div class="flex flex-col gap-6 items-center lg:items-start lg:h-full lg:justify-center">
+                        <div class="w-2/3 lg:w-2/3">
+                            <h1 class="text-5xl font-light text-center lg:text-start"><span class="font-bold">About Us</span> Fake or Real</h1>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div>
+                                <p class="text-base font-normal opacity-70 text-center lg:text-start">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div>
+                                <p class="text-base font-normal opacity-70 text-center lg:text-start">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <button class="btn">explore more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+    <!-- Recent Start -->
+    <section class="px-6 pt-7 pb-14 md:p-11 lg:px-12 lg:py-11 bg-pink">
+        <div class="container">
+            <div class="flex flex-col gap-16">
+                <div class="row">
+                    <div class="col-span-12 lg:col-span-4">
+                        <div class="flex justify-center">
+                            <div class="md:w-2/3 lg:w-full">
+                                <h1 class="text-5xl font-light text-center lg:text-start">
+                                    <span class="font-bold">Our Recent Work</span> By Our Experts
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-5 lg:col-start-8">
+                        <div>
+                            <p class="text-base font-normal text-center lg:text-start">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <div class="flex flex-col gap-8 px-2 py-6 rounded-xl bg-white">
+                            <div>
+                                <img class="w-full" src="../public/asset/logo/ui soup.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h1 class="text-2xl font-bold">UI Soup</h1>
+                                </div>
+                                <div>
+                                    <button class="rounded-full border px-3 py-1 text-sm font-medium">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <div class="flex flex-col gap-8 px-2 py-6 rounded-xl bg-white">
+                            <div>
+                                <img class="w-full" src="../public/asset/logo/gold.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h1 class="text-2xl font-bold">Goldcrown Labs</h1>
+                                </div>
+                                <div>
+                                    <button class="rounded-full border px-3 py-1 text-sm font-medium">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6 md:col-start-4 lg:col-span-4">
+                        <div class="flex flex-col gap-8 px-2 py-6 rounded-xl bg-white">
+                            <div>
+                                <img class="w-full" src="../public/asset/logo/close.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h1 class="text-2xl font-bold">Close Concierge</h1>
+                                </div>
+                                <div>
+                                    <button class="rounded-full border px-3 py-1 text-sm font-medium">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent End -->
+    <!-- Our Start -->
+    <section class="px-6 py-7 md:p-11 lg:px-12 lg:py-11">
+        <div class="container">
+            <div class="space-y-16">
+                <div class="row">
+                    <div class="col-span-12">
+                        <div class="flex justify-center">
+                            <div class="w-1/2 md:w-2/3 lg:w-1/2">
+                                <h1 class="text-2xl md:text-5xl font-light text-center"><span class="font-bold">Our Testimonials</span> 
+                                    What Our Clients Are Saying</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-span-10 col-start-2 md:col-span-6">
+                        <div class="px-8 py-6 border flex flex-col gap-4">
+                            <div>
+                                <img src="../public/asset/logo/kutip.png" alt="kutip">
+                            </div>
+                            <div class="space-y-3">
+                                <div>
+                                    <p class="text-base font-normal">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <div class="border-t-4 w-3 border-kuning mt-2"></div>
+                                    <div>
+                                        <p class="text-base font-semibold">UI Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-10 col-start-2 md:col-span-6">
+                        <div class="px-8 py-6 border flex flex-col gap-4">
+                            <div>
+                                <img src="../public/asset/logo/kutip.png" alt="kutip">
+                            </div>
+                            <div class="space-y-3">
+                                <div>
+                                    <p class="text-base font-normal">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <div class="border-t-4 w-3 border-kuning mt-2"></div>
+                                    <div>
+                                        <p class="text-base font-semibold">UI Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our End -->
+    <!-- Footer Start -->
+    <footer class="px-6 pt-7 pb-28 md:p-11 lg:px-12 lg:py-11 bg-black text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12 md:col-span-6 lg:col-span-5">
+                    <div class="space-y-4">
+                        <div>
+                            <h1 class="text-4xl font-bold">Dream Agency</h1>
+                        </div>
+                        <div>
+                            <p class="text-base font-normal">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                        </div>
+                        <div>
+                            <p class="text-base font-semibold uppercase">Get In Touch</p>
+                        </div>
+                        <div class="flex items-center border">
+                            <input class="text-base font-normal p-4 w-full h-full bg-transparent uppercase" type="email" name="" placeholder="Enter Your Email"><a class="py-4 px-12 text-black bg-white text-base font-semibold" href="#">SEND</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-5 md:col-start-8">
+                    <div class="flex h-full items-center">
+                        <a href="#"><img class="w-full h-full" src="../public/asset/logo/map.png" alt="map"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

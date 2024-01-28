@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply max-w-7xl mx-auto;
+    }
+    .btn {
+        @apply inline-block text-base py-5 px-12 uppercase text-center rounded-lg font-bold bg-biru text-white;
+    }
+    .row {
+        @apply grid grid-cols-12 gap-5;
+    }
+    .card {
+        @apply p-5 rounded-xl gap-3 bg-white;
+    }
+}
