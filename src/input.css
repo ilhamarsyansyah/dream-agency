@@ -7,7 +7,7 @@
         @apply max-w-7xl mx-auto;
     }
     .btn {
-        @apply inline-block text-base py-5 px-12 uppercase text-center rounded-lg font-bold bg-biru text-white;
+        @apply inline-block text-base py-5 px-12 uppercase text-center rounded-lg font-bold;
     }
     .row {
         @apply grid grid-cols-12 gap-5;
